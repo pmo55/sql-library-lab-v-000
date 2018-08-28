@@ -11,7 +11,9 @@ def select_name_and_motto_of_char_with_longest_motto
   "SELECT authors.name, characters.motto
   FROM authors
   JOIN characters
-  ON authors.id=characters.author_id;
+  ON authors.id=characters.author_id
+  GROUP BY COUNT(chatacters.motto)
+  LIMIT 1;
   
   "
 end
