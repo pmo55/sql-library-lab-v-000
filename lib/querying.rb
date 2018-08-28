@@ -51,5 +51,8 @@ end
 
 def select_character_names_and_number_of_books_they_are_in
  "SELECT characters.names, COUNT(*) as book_count
- FROM character_books;"
+ FROM character_books
+ JOIN characters
+ ON characters.
+ ;"
 end
