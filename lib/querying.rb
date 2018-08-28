@@ -41,7 +41,8 @@ def select_series_title_with_most_human_characters
   ON characters.series_id=series.id
   JOIN character_books
   ON character_books.character_id=characters.id
-  WHERE characters.species='humans';
+  WHERE characters.species='humans'
+  GROUP BY series.title;
   "
 end
 
