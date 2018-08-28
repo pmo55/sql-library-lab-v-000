@@ -13,7 +13,7 @@ def select_name_and_motto_of_char_with_longest_motto
   JOIN characters
   ON authors.id=characters.author_id
   WHERE authors.id=characters.author_id
-  ORDER BY Length(motto) DESC;"
+  ORDER BY Length(characters.motto) DESC;"
 end
 
 
