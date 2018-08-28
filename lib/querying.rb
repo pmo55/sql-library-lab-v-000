@@ -9,7 +9,7 @@ end
 
 def select_name_and_motto_of_char_with_longest_motto
   "SELECT authors.name, characters.motto
-  FROM authors, characters
+  FROM authors
   JOIN characters
   ON authors.id=characters.author_id;
   
